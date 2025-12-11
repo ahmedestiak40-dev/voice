@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Voice Recorder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Voice Memo 🔊</h1>
+
+        <div class="recording-display">
+            <p id="status-message">Tap the microphone to start.</p>
+            <div id="timer" class="timer">00:00:00</div>
+        </div>
+
+        <div class="controls-area">
+            <button id="record-button" class="mic-button">
+                <i class="fas fa-microphone"></i>
+            </button>
+            
+            <div id="active-controls" class="active-controls hidden">
+                <button id="stop-button" class="control-btn stop-btn" title="Stop">
+                    <i class="fas fa-square"></i>
+                </button>
+                <button id="pause-button" class="control-btn pause-btn" title="Pause/Resume">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="audio-list" class="audio-list">
+            <h2>Saved Recordings (Tap to Play)</h2>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
